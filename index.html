@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Nombre Mystere</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <h1 id="titre">Nombre Mystere</h1>
+    <section class="style-sec">
+      <h2 id="chrono">NaN</h2>
+      <div id="sec-jouer">
+        <p>
+          Le but du jeu est de trouver le nombre mystère,
+          qui est en un compris dans l'intervalle [1, 10]
+        </p>
+        <span id="text-jouer">Si vous êtes prêt(e) à jouer, cliquez sur "Jouer"</span>
+        <button onclick="startGame ()">Jouer</button>
+      </div>
+    </section>
+    <input type="number" id="intext" placeholder="Nombre entier entre 1 et 10" min="1" max="10"> <br />
+    <section class="style-sec">
+      <div id="sec-message">
+        <h2 id="réussir"></h2>
+        <h2 id="message"></h2>
+      </div>
+    </section>
+
+    <div id="mystere-tableau"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
